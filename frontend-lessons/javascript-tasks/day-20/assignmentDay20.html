@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 20 Assignment</title>
+</head>
+<body>
+    <h1>JavaScript Task - Day 20</h1>
+    <p>This is a random paragraph.</p>
+    <p class = "info">This paragraph has info as its class.</p>
+    <p class = "info">This paragraph is the same as the previous one.</p>
+
+    <div id = "header">This is a sample header.</div>
+    <p>This is a random paragraph.</p>
+    <p class = "highlight">This paragraph has highlight as its class.</p>
+
+    <script>
+        //getElementsByTagName
+        const paragraph = document.getElementsByTagName("p");
+        console.log("Paragraphs:", paragraph);
+
+        //getElementsByClassName
+        const infoElements = document.getElementsByClassName("info");
+        console.log("Info Elements:", infoElements);
+
+        //getElementById
+        const headerElement = document.getElementById("header");
+        console.log("Header Element:", headerElement);
+
+        //querySelector
+        const highlightElement = document.querySelector(".highlight");
+        console.log("Highlight Element:", highlightElement);
+
+        //Task 2
+        paragraph[1].innerHTML = "This paragraph is now updated!";
+        headerElement.style.backgroundColor = "yellow";
+
+        //Task 3
+        const newHeading = document.createElement("H3");
+        const textHeading = document.createTextNode("New Section");
+        newHeading.appendChild(textHeading);
+        document.body.appendChild(newHeading);
+
+        //Task 4
+        paragraph[0].remove();
+
+        //Task 5
+        headerElement.addEventListener("click", clickHeader);
+        function clickHeader() {
+            console.log("Header clicked!");
+        }
+
+        //Task 6
+        const colors = ["pink", "green", "blue", "gold"];
+        for (let i = 0; i < colors.length; i++) {
+            paragraph[i].style.backgroundColor = colors[i];
+        }
+    </script>
+</body>
+</html>
