@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+    height: 97vh;
+    font-family: "Chakra Petch", Arial, Helvetica, sans-serif;
+    background-color: #FAF9F6;
+}
+
+#check-btn {
+    font-family: "Chakra Petch", Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    color: black;
+    background-color: #ffffba;
+    height: auto;
+    padding: 15px 20px;
+    margin: 0 5px;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px 0 gray;
+    transition: 250ms;
+    transition-timing-function: ease-out;
+    margin-top: 60px;
+}
+
+#check-btn:hover {
+    color: #ffffba;
+    background-color: black;
+    box-shadow: 5px 5px 8px 0px gray;
+    cursor: pointer;
+    transform: translateY(-5px);
+}
+
+#check-btn:active {
+    transform: translateY(3px);
+}
+
+#reset-btn {
+    font-family: "Chakra Petch", Arial, Helvetica, sans-serif;
+    font-size: 1.25rem;
+    color: black;
+    background-color: #ffffba;
+    height: auto;
+    padding: 15px 20px;
+    margin: 0 5px;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px 0 gray;
+    transition: 250ms;
+    transition-timing-function: ease-out;
+    margin-top: 100px;
+}
+
+#reset-btn:hover {
+    color: #ffffba;
+    background-color: black;
+    box-shadow: 2px 2px 5px 0px gray;
+    cursor: pointer;
+    transform: translateY(-5px);
+}
+
+#reset-btn:active {
+    transform: translateY(3px);
+}
+
+#game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 800px;
+    margin-top: 20px;
+}
+
+h1 {
+    font-size: 60px;
+    color: #baffc9;
+    -webkit-text-stroke: 2px black;
+}
+
+h2 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    height: 100px;
+    font-size: 60px;
+    margin-top: 120px;
+    font-weight: 700;
+    color: #baffc9;
+    -webkit-text-stroke: 2px black;
+}
+
+input {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: black;
+    background-color: #FAF9F6;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 15px;
+    width: 50px;    
+}
+
+p {
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+}
